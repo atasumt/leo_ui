@@ -170,17 +170,21 @@ ThemeData lightTheme(BuildContext context) {
     checkboxTheme: CheckboxThemeData(
       fillColor: MaterialStateProperty.resolveWith((states) {
         if (states.contains(MaterialState.selected)) {
-          return kPrimaryColor;
+          return kCardColor;
         }
         if (states.contains(MaterialState.disabled)) {
           return kDisabledColor;
         }
         return Colors.transparent;
       }),
-
-      checkColor: MaterialStateProperty.all(Colors.white),
-      overlayColor: MaterialStateProperty.all(kFieldColor),
-      // side: BorderSide(width: 2, color: kThirdColor),
+      checkColor: MaterialStateProperty.all(kPrimaryColor),
+      overlayColor: MaterialStateProperty.all(kPrimaryColor),
+      side: MaterialStateBorderSide.resolveWith((states) {
+        if (states.contains(MaterialState.selected)) {
+          return const BorderSide(width: 2, color: kPrimaryColor);
+        }
+        return const BorderSide(width: 2, color: kPrimaryColor);
+      }),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(5),
       ),

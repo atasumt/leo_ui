@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:form_builder_validators/form_builder_validators.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:lio_ui_example/core/widget/design/const_design.dart';
 import 'package:lio_ui_example/core/widget/fields/global_form_text_field.dart';
 
-class WithKeyTextFormField extends StatelessWidget {
+class WithKeyTextFormField extends ConsumerWidget {
   const WithKeyTextFormField({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     return Column(
       children: [
         Row(
