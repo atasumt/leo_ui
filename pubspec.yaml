@@ -26,6 +26,7 @@ dependencies:
   go_router: ^13.0.1
   flutter_hooks: ^0.20.4
   font_awesome_flutter: ^10.6.0
+  flutter_svg: ^2.0.9
 
 dev_dependencies:
   flutter_test:

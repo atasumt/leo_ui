@@ -48,7 +48,7 @@ const kDefaultRadius = 12.0;
 
 const kDefaultMiddlePadding = 20.0;
 
-const kDefaultBiggerPadding = 24.0;
+const kDefaultBiggerPadding = 33.0;
 
 const kFieldDefaultPadding = 16.0;
 
