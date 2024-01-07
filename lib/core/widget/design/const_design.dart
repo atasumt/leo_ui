@@ -10,6 +10,8 @@ const kTextColor = Color(0xff4A4848);
 
 const kSecondaryTextColor = Color.fromRGBO(0, 0, 0, 0.54);
 
+const kDontColor = Color(0xffBA2B2C);
+
 const kBgColor = Color(0xffE5E5E5);
 
 const kAppBarColor = Color(0xff292D32);
