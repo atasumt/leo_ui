@@ -21,7 +21,7 @@ class WithKeyContiuneButton extends HookConsumerWidget {
       text: 'Devam',
       onPressed: () {
         if (withKeyFormKey.currentState!.validate()) {
-          context.go(RouteNameConstants.login);
+          context.push(RouteNameConstants.login);
         }
       },
       style: !buttonEnable

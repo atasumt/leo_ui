@@ -13,6 +13,7 @@ AppBar globalAppBar(
   return AppBar(
     title: title,
     leading: leading,
+    automaticallyImplyLeading: false,
     centerTitle: centerTitle,
     elevation: 0,
     actions: actions,

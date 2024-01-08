@@ -48,25 +48,29 @@ class GlobalElevatedButton extends StatelessWidget {
                   height: height ?? 50,
                   child: custom ??
                       Row(
-                        mainAxisSize: expand ? MainAxisSize.max : MainAxisSize.min,
+                        mainAxisSize:
+                            expand ? MainAxisSize.max : MainAxisSize.min,
                         mainAxisAlignment: mainAxisAlignment,
                         children: [
                           icon ?? const SizedBox(),
                           if (text != "" &&
                               icon != null &&
                               // dont add left padding if space between is selected.
-                              mainAxisAlignment != MainAxisAlignment.spaceBetween) ...[
+                              mainAxisAlignment !=
+                                  MainAxisAlignment.spaceBetween) ...[
                             const SizedBox(
                               width: 10,
                             ),
                           ],
                           Text(
                             text,
-                            style: textStyle ?? Theme.of(context).textTheme.labelLarge,
+                            style: textStyle ??
+                                Theme.of(context).textTheme.labelLarge,
                           ),
                           if (trailingIcon != null &&
                               // dont add left padding if space between is selected.
-                              mainAxisAlignment != MainAxisAlignment.spaceBetween) ...[
+                              mainAxisAlignment !=
+                                  MainAxisAlignment.spaceBetween) ...[
                             const SizedBox(
                               width: 10,
                             ),

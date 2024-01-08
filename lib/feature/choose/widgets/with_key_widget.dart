@@ -5,7 +5,12 @@ import 'package:lio_ui_example/core/widget/design/const_design.dart';
 import 'package:lio_ui_example/gen/assets.gen.dart';
 
 class WithKeyWidget extends ConsumerWidget {
-  const WithKeyWidget({super.key, required this.title, required this.body, required this.url, required this.index});
+  const WithKeyWidget(
+      {super.key,
+      required this.title,
+      required this.body,
+      required this.url,
+      required this.index});
 
   final String? title;
   final String? body;
@@ -49,11 +54,17 @@ class WithKeyWidget extends ConsumerWidget {
                     children: [
                       Text(
                         '$title',
-                        style: Theme.of(context).textTheme.titleMedium!.copyWith(color: kPrimaryColor, fontWeight: FontWeight.bold),
+                        style: Theme.of(context)
+                            .textTheme
+                            .titleMedium!
+                            .copyWith(
+                                color: kPrimaryColor,
+                                fontWeight: FontWeight.bold),
                       ),
                       Text(
                         '$body',
-                        style: Theme.of(context).textTheme.bodySmall!.copyWith(),
+                        style:
+                            Theme.of(context).textTheme.bodySmall!.copyWith(),
                       ),
                     ],
                   ),

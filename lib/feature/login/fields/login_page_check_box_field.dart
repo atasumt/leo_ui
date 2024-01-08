@@ -14,12 +14,16 @@ class LoginPageCheckBoxField extends StatelessWidget {
           children: [
             Text(
               'Şifremi Unuttum',
-              style: Theme.of(context).textTheme.bodySmall!.copyWith(color: kPrimaryColor, fontWeight: FontWeight.w600),
+              style: Theme.of(context)
+                  .textTheme
+                  .bodySmall!
+                  .copyWith(color: kPrimaryColor, fontWeight: FontWeight.w600),
             ),
             GlobalFormCheckBox(
               customTitle: Text(
                 'Beni Hatırla',
-                style: Theme.of(context).textTheme.bodySmall!.copyWith(color: kPrimaryColor, fontWeight: FontWeight.w600),
+                style: Theme.of(context).textTheme.bodySmall!.copyWith(
+                    color: kPrimaryColor, fontWeight: FontWeight.w600),
               ),
               name: 'rememberMe',
               width: 125,

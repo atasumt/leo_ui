@@ -67,7 +67,11 @@ class GlobalFormCheckBox extends StatelessWidget {
                 borderSide: BorderSide(color: Colors.transparent, width: 1),
               ),
             ),
-            title: customTitle ?? GestureDetector(onTap: onTitleTap, child: Text(title ?? "", style: Theme.of(context).textTheme.bodySmall!)),
+            title: customTitle ??
+                GestureDetector(
+                    onTap: onTitleTap,
+                    child: Text(title ?? "",
+                        style: Theme.of(context).textTheme.bodySmall!)),
             validator: validator,
           ),
         ),

@@ -2,6 +2,10 @@
 
 Bu proje, Riverpod, Flutter Hook ve özel bir log yapısı kullanılarak geliştirilmiş bir Flutter uygulamasıdır. Bu uygulama, tasarım özelinde bilgi aktarımını hedefler ve aynı zamanda bir case çalışmasıdır.
 
+# Demo
+[![UyumSoft](assets/video_adi.png)](uyumsoft.mp4)
+
+
 ## Kullanılan Araçlar
 
 - [Riverpod](https://pub.dev/packages/riverpod): Flutter uygulamaları için state management sağlayan bir paket.

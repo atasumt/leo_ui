@@ -10,7 +10,8 @@ ThemeData lightTheme(BuildContext context) {
     cupertinoOverrideTheme: CupertinoThemeData(
         barBackgroundColor: Colors.white,
         primaryColor: kPrimaryColor,
-        textTheme: CupertinoTextThemeData(dateTimePickerTextStyle: Theme.of(context).textTheme.titleMedium)),
+        textTheme: CupertinoTextThemeData(
+            dateTimePickerTextStyle: Theme.of(context).textTheme.titleMedium)),
     scaffoldBackgroundColor: kCardColor,
     textTheme: GoogleFonts.robotoTextTheme(ThemeData.light().textTheme)
         .apply(
@@ -73,7 +74,8 @@ ThemeData lightTheme(BuildContext context) {
         (states) => true,
       ),
     ),
-    radioTheme: RadioThemeData(fillColor: MaterialStateProperty.resolveWith((states) {
+    radioTheme:
+        RadioThemeData(fillColor: MaterialStateProperty.resolveWith((states) {
       if (states.contains(MaterialState.selected)) {
         return kPrimaryColor;
       }
@@ -82,7 +84,8 @@ ThemeData lightTheme(BuildContext context) {
       }
       return kSecondaryColor;
     })),
-    progressIndicatorTheme: const ProgressIndicatorThemeData(color: kPrimaryColor),
+    progressIndicatorTheme:
+        const ProgressIndicatorThemeData(color: kPrimaryColor),
     textButtonTheme: TextButtonThemeData(
       style: ButtonStyle(
         shape: MaterialStateProperty.all(const RoundedRectangleBorder(
@@ -109,7 +112,9 @@ ThemeData lightTheme(BuildContext context) {
             side: BorderSide(
               color: kFieldColor,
             ))),
-    appBarTheme: const AppBarTheme(backgroundColor: Colors.white, iconTheme: IconThemeData(color: kSecondaryColor)),
+    appBarTheme: const AppBarTheme(
+        backgroundColor: Colors.white,
+        iconTheme: IconThemeData(color: kSecondaryColor)),
     bottomSheetTheme: const BottomSheetThemeData(
       backgroundColor: Colors.white,
     ),
@@ -134,7 +139,8 @@ ThemeData lightTheme(BuildContext context) {
           return kPrimaryColor;
         },
       ),
-      shape: MaterialStateProperty.all<OutlinedBorder>(RoundedRectangleBorder(borderRadius: BorderRadius.circular(kDefaultRadius))),
+      shape: MaterialStateProperty.all<OutlinedBorder>(RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(kDefaultRadius))),
     )),
     outlinedButtonTheme: OutlinedButtonThemeData(
         style: ButtonStyle(
@@ -157,8 +163,14 @@ ThemeData lightTheme(BuildContext context) {
       }),
     ),
     dialogTheme: DialogTheme(
-        titleTextStyle: Theme.of(context).textTheme.titleMedium!.copyWith(color: kSecondaryColor),
-        contentTextStyle: Theme.of(context).textTheme.titleSmall!.copyWith(color: kSecondaryColor)),
+        titleTextStyle: Theme.of(context)
+            .textTheme
+            .titleMedium!
+            .copyWith(color: kSecondaryColor),
+        contentTextStyle: Theme.of(context)
+            .textTheme
+            .titleSmall!
+            .copyWith(color: kSecondaryColor)),
     inputDecorationTheme: InputDecorationTheme(
         enabledBorder: inputDecorationEnabledBorder(),
         focusedBorder: inputDecorationFocusedBorder(),

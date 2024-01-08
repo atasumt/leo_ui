@@ -1,11 +1,13 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:lio_ui_example/core/interceptor/provider_interceptor.dart';
 import 'package:lio_ui_example/core/theme/light_theme.dart';
 import 'package:lio_ui_example/core/utils/routes.dart';
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  //await Firebase.initializeApp();
   runApp(
     ProviderScope(
       observers: [ProviderInterceptor()],
@@ -36,7 +38,8 @@ class MyApp extends StatelessWidget {
                 OverlayEntry(
                     builder: (context) => GestureDetector(
                         onTap: () {
-                          WidgetsBinding.instance.focusManager.primaryFocus?.unfocus();
+                          WidgetsBinding.instance.focusManager.primaryFocus
+                              ?.unfocus();
                         },
                         child: child!))
               ])),

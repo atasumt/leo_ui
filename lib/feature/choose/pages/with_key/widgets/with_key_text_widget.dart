@@ -13,7 +13,10 @@ class WithKeyTextWidget extends StatelessWidget {
           children: [
             Text(
               'Bağlantı Adresi İle',
-              style: Theme.of(context).textTheme.titleMedium!.copyWith(fontWeight: FontWeight.w600),
+              style: Theme.of(context)
+                  .textTheme
+                  .titleMedium!
+                  .copyWith(fontWeight: FontWeight.w600),
             ),
             const SizedBox(width: 6),
             Container(
@@ -26,7 +29,10 @@ class WithKeyTextWidget extends StatelessWidget {
                   padding: const EdgeInsets.all(2.0),
                   child: Text(
                     'i',
-                    style: Theme.of(context).textTheme.labelSmall!.copyWith(fontWeight: FontWeight.w600),
+                    style: Theme.of(context)
+                        .textTheme
+                        .labelSmall!
+                        .copyWith(fontWeight: FontWeight.w600),
                   ),
                 )),
           ],
@@ -38,7 +44,10 @@ class WithKeyTextWidget extends StatelessWidget {
         const SizedBox(height: 6),
         Text(
           'Bağlantı adresimi bilmiyorum',
-          style: Theme.of(context).textTheme.bodySmall!.copyWith(color: kDontColor),
+          style: Theme.of(context)
+              .textTheme
+              .bodySmall!
+              .copyWith(color: kDontColor),
         )
       ],
     );

@@ -97,7 +97,8 @@ class GlobalFormTextField extends StatelessWidget {
                   padding: const EdgeInsets.only(bottom: 2.0),
                   child: Text(
                     title,
-                    style: titleStyle ?? Theme.of(context).textTheme.titleSmall!,
+                    style:
+                        titleStyle ?? Theme.of(context).textTheme.titleSmall!,
                   ),
                 )
               : Container(),
@@ -132,13 +133,25 @@ class GlobalFormTextField extends StatelessWidget {
                 hintText: hintText,
                 labelText: labelText,
                 counterText: counterText,
-                errorStyle: Theme.of(context).textTheme.titleSmall!.copyWith(color: kCardColor, fontSize: 12),
-                hintStyle: hintStyle ?? globalFieldHintStyle(context).copyWith(color: enabled ? null : kDisabledColor),
-                labelStyle: globalFieldLabelStyle(context).copyWith(color: enabled ? null : kDisabledColor),
-                prefixIcon: prefixIcon != null ? Padding(padding: const EdgeInsets.only(top: 14, left: 10, right: 10, bottom: 4), child: prefixIcon) : null,
+                errorStyle: Theme.of(context)
+                    .textTheme
+                    .titleSmall!
+                    .copyWith(color: kCardColor, fontSize: 12),
+                hintStyle: hintStyle ??
+                    globalFieldHintStyle(context)
+                        .copyWith(color: enabled ? null : kDisabledColor),
+                labelStyle: globalFieldLabelStyle(context)
+                    .copyWith(color: enabled ? null : kDisabledColor),
+                prefixIcon: prefixIcon != null
+                    ? Padding(
+                        padding: const EdgeInsets.only(
+                            top: 14, left: 10, right: 10, bottom: 4),
+                        child: prefixIcon)
+                    : null,
                 suffixIcon: suffixIcon != null
                     ? Padding(
-                        padding: const EdgeInsets.only(top: 14, left: 10, right: 10, bottom: 4),
+                        padding: const EdgeInsets.only(
+                            top: 14, left: 10, right: 10, bottom: 4),
                         child: suffixIcon,
                       )
                     : null),

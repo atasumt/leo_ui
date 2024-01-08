@@ -1,6 +1,7 @@
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-final chooseNavigationNotifierProvider = StateNotifierProvider<ChooseNavigationNotifier, int>((ref) {
+final chooseNavigationNotifierProvider =
+    StateNotifierProvider<ChooseNavigationNotifier, int>((ref) {
   return ChooseNavigationNotifier();
 });
 

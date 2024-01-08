@@ -15,11 +15,17 @@ AppBar globalUserEntryAppBar(BuildContext context) {
           children: [
             Text(
               'LioXHR',
-              style: Theme.of(context).textTheme.displayLarge!.copyWith(color: kCardColor),
+              style: Theme.of(context)
+                  .textTheme
+                  .displayLarge!
+                  .copyWith(color: kCardColor),
             ),
             Text(
               'Hoş geldiniz',
-              style: Theme.of(context).textTheme.displayLarge!.copyWith(color: kCardColor),
+              style: Theme.of(context)
+                  .textTheme
+                  .displayLarge!
+                  .copyWith(color: kCardColor),
             ),
           ],
         ),

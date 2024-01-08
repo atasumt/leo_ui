@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:lio_ui_example/core/extension/media_quary_extension.dart';
-import 'package:lio_ui_example/core/notifiers/choose_navigation_notifier.dart';
 import 'package:lio_ui_example/core/widget/buttons/global_elevated_button.dart';
 import 'package:lio_ui_example/core/widget/design/const_design.dart';
 
@@ -13,9 +12,13 @@ class WithKeyReturnLoginChooseButton extends ConsumerWidget {
     return GlobalElevatedButton(
       width: context.width,
       text: 'Giriş Tercihini Değiştir',
-      textStyle: Theme.of(context).textTheme.labelLarge!.copyWith(color: kPrimaryColor),
+      textStyle: Theme.of(context)
+          .textTheme
+          .labelLarge!
+          .copyWith(color: kPrimaryColor),
       onPressed: () {
-        ref.read(chooseNavigationNotifierProvider.notifier).changeCurrentIndex(0);
+        Navigator.pop(context);
+        //ref.read(chooseNavigationNotifierProvider.notifier).changeCurrentIndex(0);
       },
       style: ButtonStyle(
         backgroundColor: MaterialStateProperty.all(kCardColor),
