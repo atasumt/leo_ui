@@ -11,6 +11,9 @@ Bu proje, Riverpod, Flutter Hook ve özel bir log yapısı kullanılarak gelişt
 - [Riverpod](https://pub.dev/packages/riverpod): Flutter uygulamaları için state management sağlayan bir paket.
 - [Flutter Hook](https://pub.dev/packages/flutter_hooks): Flutter için özel Hook'lar sağlayan bir paket.
 - [Log Yapısı](https://pub.dev/packages/logger): Günlük kaydı (log) için kullanılan bir paket.
+- [Dio](https://pub.dev/packages/dio): HTTP istekleri yapmak ve işlemek için kullanılan bir paket.
+- Sayfalar arası geçişte animasyon kullanımı.
+- Repository ve MVVM (Model-View-ViewModel) tasarım deseni kullanımı.
 
 ## Nasıl Çalıştırılır?
 
